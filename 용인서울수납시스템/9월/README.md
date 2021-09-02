@@ -19,3 +19,4 @@
 ### 3. 사용기술   
  - JavaScript
  - Thymeleaf
+ - Spring Boot
