@@ -1,4 +1,4 @@
-JqGrid 기본 사용법(참고 URL: https://mine-it-record.tistory.com/284?category=1106354)
+1. JqGrid 기본 사용법(참고 URL: https://mine-it-record.tistory.com/284?category=1106354)
 url : ajax 처럼 데이터를 주고받을 서버 url 주소이다.
 datatype : 말 그대로 데이터의 타입이다. ajax처럼 사용하면 된다. (local 타입도 존재)
 postData : 넘겨줄 데이터이다.
@@ -10,7 +10,7 @@ pager : 페이징을 하기 위해 선언해두며 거의 필수라 보면 된�
 height , width : 높이 , 넓이
 caption : 타이틀 , 제목
 
-JqGrid의 다양한 옵션(참고 URL : https://mine-it-record.tistory.com/290?category=1106354)
+2. JqGrid의 다양한 옵션(참고 URL : https://mine-it-record.tistory.com/290?category=1106354)
 - colmodel option
 name : 해당 column 에 출력해야할 데이터의 이름이다. 서버로부터 넘어오는 데이터명을 명시
 index : 데이터 출력과는 연관이 없으며 정렬에 사용할 때 서버로 전송 시 넘어가는 데이터명이다.
@@ -68,3 +68,5 @@ onSelectAll : function(aRowids, status){
 onCellSelect : function(rowid, iCol, cellcontent, e){            
 //rowid : id of the row , iCol : index of the cell , cellcontent : content of the cell , e : event object
 }
+
+3. JqGrid Data Grouping(참고 URL : http://1004lucifer.blogspot.com/2019/05/jqgrid-data-grouping.html)
