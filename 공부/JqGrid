@@ -1,0 +1,72 @@
+1. JqGrid 기본 사용법(참고 URL: https://mine-it-record.tistory.com/284?category=1106354)
+url : ajax 처럼 데이터를 주고받을 서버 url 주소이다.
+datatype : 말 그대로 데이터의 타입이다. ajax처럼 사용하면 된다. (local 타입도 존재)
+postData : 넘겨줄 데이터이다.
+mtype : POST or GET
+colNames : 그리드 헤더의 제목 배열이며 ( colModel 과 개수가 꼭 맞아야한다. )
+colModel : 그리드 행에 보여줄 데이터로 꼭 데이터 컬럼과 매칭을 시켜줘야 한다. (colNames 의 개수와 맞아야한다.)
+rowNum : 보여줄 행의 개수
+pager : 페이징을 하기 위해 선언해두며 거의 필수라 보면 된다.
+height , width : 높이 , 넓이
+caption : 타이틀 , 제목
+
+2. JqGrid의 다양한 옵션(참고 URL : https://mine-it-record.tistory.com/290?category=1106354)
+- colmodel option
+name : 해당 column 에 출력해야할 데이터의 이름이다. 서버로부터 넘어오는 데이터명을 명시
+index : 데이터 출력과는 연관이 없으며 정렬에 사용할 때 서버로 전송 시 넘어가는 데이터명이다.
+width : column 의 가로 사이즈
+align  : column 내에서의 데이터 정렬 (left, right, center 등?)
+sortable : 해당 컬럼이 정렬될수 있는지를 지정한다. 일반적으로 true 설정이며 특정 컬럼의 정렬을 허용하지 않을때 사용함.
+hidden : 특정 컬럼의 내용을 보이지 않게 하기 위해 설정한다. (input type hidden 과 용도 동일하다 생각하면 될듯.)
+format : intefer, number, currency, data 등의 컬럼 데이터의 format을 설정하기 위해 사용된다.
+label : colNames 가 비어있을 때 컬럼의 제목을 정의한다. (단. colName 배열과 label 속성이 없을 경우 name으로 대체한다.)
+edittype : 편집가능한 필드 타입을 정의하며 사용한다.  (edit 관련 속성 상세 설명)
+(text, textarea, select, checkbox, password, button, image, file, custom) 타입을 정의할 수 있으며 기본값은 text 이다.
+
+- jqgrid event option
+// 불러오기 실패했을 경우 발생하는 이벤트
+loadError : function(xhr, status, error){
+//xhr : XMLHttpRequest object , status : type of error , error : exception object
+}
+
+// row를 선택했을 때 발생하는 이벤트
+onSelectRow : function(rowid, status, e){
+//rowid: id of the row , status : status of the selection , e: event object
+}
+
+// 서버로 데이터를 요청하기 직전에 발생하는 이벤트
+beforeRequest : function(){            
+
+}
+
+// 그리드가 완전히 모든 작업을 완료한 후 발생하는 이벤트
+gridComplete : function(){
+//
+}
+
+// 서버에 요청을 보낸 직후 바로 발생하는 이벤트
+loadComplete : function(){
+//
+}
+
+// 페이징이 변경되는 경우에 발생하는 이벤트
+onPaging : function(pgButton){
+//pgButton : [page button] and also page number in the page input box (press Enter) , etc
+}
+
+// 마우스 우클릭 했을경우 발생하는 이벤트
+onRightClickRow : function(rowid, iRow, iCol, e){
+//rowid : id of the row , iRow : index of the row , iCol : index of the cell , e : event object
+}
+
+// 체크박스를 눌러 모든 row를 선택할 경우 발생하는 이벤트 (multiselection 옵션 활성화 필수)
+onSelectAll : function(aRowids, status){    
+//aRowids : array of the selected rowid's, status : header check box return true or false (true if checked, false if not checked)
+}
+
+// cell 즉 column 선택을 처리하기위해 사용되는 이벤트 (cell 식별 시 사용)
+onCellSelect : function(rowid, iCol, cellcontent, e){            
+//rowid : id of the row , iCol : index of the cell , cellcontent : content of the cell , e : event object
+}
+
+3. JqGrid Data Grouping(참고 URL : http://1004lucifer.blogspot.com/2019/05/jqgrid-data-grouping.html)
