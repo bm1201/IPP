@@ -19,3 +19,4 @@
  - JavaScript
  - Thymeleaf
  - Spring Boot
+ - Restful API
