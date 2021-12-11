@@ -19,7 +19,8 @@
 
 
 ### 3. 사용기술   
- - JavaScript
- - Thymeleaf
  - Spring Boot
  - Restful API
+ - MyBatis
+ - JavaScript
+ - Thymeleaf
