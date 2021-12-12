@@ -23,7 +23,8 @@
  기초정보관리 - 교통카드 운영정보 조회 - 교통카드 B/L조회화면   
 
 ### 3. 사용기술   
- - JavaScript
- - Thymeleaf
  - Spring Boot
  - Restful API
+ - MyBatis
+ - JavaScript
+ - Thymeleaf
