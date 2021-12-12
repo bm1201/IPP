@@ -22,7 +22,8 @@
    - 영업관리-교통량관리-기간별 통행량 현황 화면   
    - 영업관리-교통량관리-요일별/시간대별/일평균 교통량 현황 화면     
 ### 3. 사용기술   
- - JavaScript
- - Thymeleaf
  - Spring Boot
  - Restful API
+ - MyBatis
+ - JavaScript
+ - Thymeleaf

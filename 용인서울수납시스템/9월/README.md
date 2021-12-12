@@ -16,7 +16,8 @@
  영업관리 화면개발(현금취급수당현황)   
  영업관리 화면개발(과잉금현황)   
 ### 3. 사용기술   
- - JavaScript
- - Thymeleaf
  - Spring Boot
  - Restful API
+ - MyBatis
+ - JavaScript
+ - Thymeleaf
